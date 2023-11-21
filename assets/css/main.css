@@ -74,7 +74,10 @@ form{
     height: 50px;
     width: 37%;
     border: 2px #eeeeee solid;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
 }
 
 .ancla li{
