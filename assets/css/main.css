@@ -1719,6 +1719,16 @@ form{
     text-align: center;
 }
 
+.texto_menu_opciones_temas_tarjetas_index_2{
+    color: #303030;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 10px;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    font-size: 25px;
+}
+
 .texto_aplicaciones_accesos_index{
     color: #303030;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
