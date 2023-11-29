@@ -23,7 +23,7 @@
 
 </head>
 <body id="id_cuerpo">
-    <div class="ancla">
+    <div class="ancla" id="mainContent">
         <div class="ancla_seccion_1">
             <a href="../index.html"><img src="../assets/img/ateneaxlogonuevo2.png" class="imagen_logo_relleno" title="Ateneax" data-bs-title="Ateneax"></a>
         </div>
@@ -175,7 +175,7 @@
 
 
 
-            <div class="contenedor_menu_opciones_index">
+            <div class="contenedor_menu_opciones_index" id="id_cambio_modo_3">
                 <div class="contenedor_titulo_bloque_menu_opciones_index">
                     <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_1">
                         <img src="../assets/img/interfaz.png" class="imagen_menu_opciones_index">
@@ -186,21 +186,37 @@
                 </div>
 
                 <div class="contenedor_temas_menu_opciones_index">
-                    <div class="temas_menu_opciones_index">
+                    <div class="temas_menu_opciones_index" id="toggleBtn" onclick="toggleMode()">
                         <div class="temas_menu_opciones_index_seccion_1">
-                            <img src="../assets/img/dia.png" class="imagen_del_menu_opciones_index">
-                        </div>
-                        <div class="temas_menu_opciones_index_seccion_2">
-                            <p class="texto_menu_opciones_temas_tarjetas_index">Día</p>
-                        </div>
-                    </div>
-                    <div class="temas_menu_opciones_index">
-                        <div class="temas_menu_opciones_index_seccion_1">
-                            <img src="../assets/img/noche.png" class="imagen_del_menu_opciones_index">
+                            <img src="../assets/img/noche.png" id="imagen_modo_noche_dia" class="imagen_del_menu_opciones_index">
                         </div>
                         <div class="temas_menu_opciones_index_seccion_2">
                             <p class="texto_menu_opciones_temas_tarjetas_index">Noche</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            
+
+            <div class="contenedor_menu_opciones_index">
+                <div class="contenedor_titulo_bloque_menu_opciones_index">
+                    <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_1">
+                        <img src="../assets/img/cerebro.png" class="imagen_menu_opciones_index">
+                    </div>
+                    <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_2">
+                        <p class="texto_aplicaciones_accesos_index">Asistente</p>
+                    </div>
+                </div>
+
+                <div class="contenedor_temas_menu_opciones_index">
+                    <div class="temas_menu_opciones_index">
+                        <p class="texto_menu_opciones_temas_tarjetas_index_2">Abrir</p>
+                    </div>
+                    <div class="temas_menu_opciones_index">
+                        <p class="texto_menu_opciones_temas_tarjetas_index_2">Cerrar</p>
                     </div>
                 </div>
             </div>
@@ -462,5 +478,6 @@
 
     <script src="../assets/js/acciones.js"></script>
     <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/noche.js"></script>
 </body>
 </html>
