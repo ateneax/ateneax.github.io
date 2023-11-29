@@ -24,7 +24,7 @@
 </head>
 
 <body id="id_cuerpo">
-    <div class="ancla">
+    <div class="ancla" id="mainContent">
         <div class="ancla_seccion_1">
             <a href="index.html"><img src="assets/img/ateneaxlogonuevo2.png" class="imagen_logo_relleno" title="Ateneax" data-bs-title="Ateneax"></a>
         </div>
@@ -58,13 +58,13 @@
 
         <div class="contenedor_automatico_seccion_1">
 
-            <div class="contenedor_menu_opciones_index">
+            <div class="contenedor_menu_opciones_index" id="id_cambio_modo_1">
                 <div class="contenedor_titulo_bloque_menu_opciones_index">
                     <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_1">
                         <img src="assets/img/tema.png" class="imagen_menu_opciones_index">
                     </div>
                     <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_2">
-                        <p class="texto_aplicaciones_accesos_index">Temas</p>
+                        <p class="texto_aplicaciones_accesos_index" id="id_cambio_texto">Temas</p>
                     </div>
                 </div>
 
@@ -124,7 +124,7 @@
 
 
 
-            <div class="contenedor_menu_opciones_index">
+            <div class="contenedor_menu_opciones_index" id="id_cambio_modo_2">
                 <div class="contenedor_titulo_bloque_menu_opciones_index">
                     <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_1">
                         <img src="assets/img/acceso.png" class="imagen_menu_opciones_index">
@@ -177,7 +177,7 @@
 
 
 
-            <div class="contenedor_menu_opciones_index">
+            <div class="contenedor_menu_opciones_index" id="id_cambio_modo_3">
                 <div class="contenedor_titulo_bloque_menu_opciones_index">
                     <div class="contenedor_titulo_bloque_menu_opciones_index_seccion_1">
                         <img src="assets/img/interfaz.png" class="imagen_menu_opciones_index">
@@ -188,17 +188,9 @@
                 </div>
 
                 <div class="contenedor_temas_menu_opciones_index">
-                    <div class="temas_menu_opciones_index">
+                    <div class="temas_menu_opciones_index" id="toggleBtn" onclick="toggleMode()">
                         <div class="temas_menu_opciones_index_seccion_1">
-                            <img src="assets/img/dia.png" class="imagen_del_menu_opciones_index">
-                        </div>
-                        <div class="temas_menu_opciones_index_seccion_2">
-                            <p class="texto_menu_opciones_temas_tarjetas_index">Día</p>
-                        </div>
-                    </div>
-                    <div class="temas_menu_opciones_index">
-                        <div class="temas_menu_opciones_index_seccion_1">
-                            <img src="assets/img/noche.png" class="imagen_del_menu_opciones_index">
+                            <img src="assets/img/noche.png" id="imagen_modo_noche_dia" class="imagen_del_menu_opciones_index">
                         </div>
                         <div class="temas_menu_opciones_index_seccion_2">
                             <p class="texto_menu_opciones_temas_tarjetas_index">Noche</p>
@@ -249,11 +241,13 @@
                 <div class="contenedor_carrusel">
                     <a href="archivos/notas/valelapenacomprareliphone15promax.html">
                         <img src="assets/img/miniaturas/miniatura_1.jpg" class="imagen_miniatura">
+                        <div class="texto_superpuesto">¿Vale la pena comprar el IPhone 15 Pro Max?</div>
                     </a>
                 </div>
                 <div class="contenedor_carrusel">
                     <a href="archivos/notas/porquelaspersonasdejarondecreerenlamitologiagriega.html">
                         <img src="assets/img/miniaturas/miniatura_10.jpg" class="imagen_miniatura">
+                        <div class="texto_superpuesto">¿Por qué se dejó de creer en los dioses griegos?</div>
                     </a>
                 </div>
             </div>
@@ -261,18 +255,30 @@
             <div class="contenedor_principal_seccion_2">
                 <div class="contenedor_carrusel_2">
                     <div class="notas_principales_2">
-                        <a href="archivos/notas/louisvuittondepobreatenerunimperio.html"><img src="assets/img/miniaturas/miniatura_3.jpg" class="imagen_miniatura"></a>
+                        <a href="archivos/notas/louisvuittondepobreatenerunimperio.html">
+                            <img src="assets/img/miniaturas/miniatura_3.jpg" class="imagen_miniatura">
+                            <div class="texto_superpuesto_2">Louis Vuitton de la pobreza a tener un imperio</div>
+                        </a>
                     </div>
                     <div class="notas_principales_2">
-                        <a href="archivos/notas/lugaresparacomerenpareja.html"><img src="assets/img/miniaturas/miniatura_4.jpg" class="imagen_miniatura"></a>
+                        <a href="archivos/notas/lugaresparacomerenpareja.html">
+                            <img src="assets/img/miniaturas/miniatura_4.jpg" class="imagen_miniatura">
+                            <div class="texto_superpuesto_2">Lugares para comer en pareja</div>
+                        </a>
                     </div>
                 </div>
                 <div class="contenedor_carrusel_2">
                     <div class="notas_principales_2">
-                        <a href="archivos/notas/museoycasadezapata.html"><img src="assets/img/miniaturas/miniatura_12.jpg" class="imagen_miniatura"></a>
+                        <a href="archivos/notas/museoycasadezapata.html">
+                            <img src="assets/img/miniaturas/miniatura_12.jpg" class="imagen_miniatura">
+                            <div class="texto_superpuesto_2">Este era el hogar de Emiliano Zapata</div>
+                        </a>
                     </div>
                     <div class="notas_principales_2">
-                        <a href="archivos/notas/elorigendelasestacionesdelaño.html"><img src="assets/img/miniaturas/miniatura_6.jpg" class="imagen_miniatura"></a>
+                        <a href="archivos/notas/elorigendelasestacionesdelaño.html">
+                            <img src="assets/img/miniaturas/miniatura_6.jpg" class="imagen_miniatura">
+                            <div class="texto_superpuesto_2">El origen de las estaciones del año</div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -326,7 +332,9 @@
 
             <div class="contenedor_tarjetas_secundarias_0">
                 <div class="notas_secundarias_0" id="id_index_01">
-                    <a href="archivos/notas/parquesparavisitarenpareja.html"><img src="assets/img/miniaturas/miniatura_7.jpg" class="imagen_miniatura"></a>
+                    <a href="archivos/notas/parquesparavisitarenpareja.html">
+                        <img src="assets/img/miniaturas/miniatura_7.jpg" class="imagen_miniatura">
+                    </a>
                 </div>
                 <div class="notas_secundarias_0" id="id_index_02">
                     <a href="archivos/notas/restaurantesveganosdelaciudaddemexico.html"><img src="assets/img/miniaturas/miniatura_8.jpg" class="imagen_miniatura"></a>
@@ -988,5 +996,6 @@
     <script src="assets/js/celular.js"></script>
     <script src="assets/js/acciones.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/noche.js"></script>
 </body>
 </html>
