@@ -16,6 +16,7 @@ texto_idea[8] = "Marte tiene dos lunas, Fobos y Deimos, nombres dados por los hi
 
 
 function celular_texto_idea_aleatorio(){
+    document.getElementById("id_texto_aleatorio_index").textContent=texto_idea[rand(9)-1];
     document.getElementById("id_texto_aleatorio").textContent=texto_idea[rand(9)-1];
 }
 
