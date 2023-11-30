@@ -13,11 +13,18 @@ texto_idea[5] = "La cama donde duerme una pareja es denominada como Tálamo.";
 texto_idea[6] = "La ambrosía era una bebida que le daba la inmortalidad a los dioses griegos.";
 texto_idea[7] = "El símbolo de la medicina es la vara de Asclepio, artefacto que utilizaba el dios Asclepio.";
 texto_idea[8] = "Marte tiene dos lunas, Fobos y Deimos, nombres dados por los hijos de Afrodita y Ares.";
+texto_idea[9] = "La marca de carros Rolls Royce esconde un paraguas en la puerta de sus vehículos.";
+texto_idea[10] = "Las gotas de lluvia caen a una velocidad de entre 14 y 30 km/h.";
+texto_idea[11] = "El punto rojo que las personas hindúes se ponen en la frente se llama Bindi.";
+texto_idea[12] = "Uruguay ganó el mundial de fútbol en 1930.";
+texto_idea[13] = "Nicolás II fue el último Zar de Rusia.";
+texto_idea[14] = "La bomba que cayó sobre Hiroshima se llama Litle Boy y detonó el 6 de agosto de 1945.";
+
 
 
 function celular_texto_idea_aleatorio(){
-    document.getElementById("id_texto_aleatorio_index").textContent=texto_idea[rand(9)-1];
-    document.getElementById("id_texto_aleatorio").textContent=texto_idea[rand(9)-1];
+    document.getElementById("id_texto_aleatorio_index").textContent=texto_idea[rand(15)-1];
+    document.getElementById("id_texto_aleatorio").textContent=texto_idea[rand(15)-1];
 }
 
 celular_texto_idea_aleatorio();
